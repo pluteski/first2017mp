@@ -1,0 +1,338 @@
+
+#=======================================================================================
+
+										180 Mar9 Run
+
+#=======================================================================================
+
+
+Here are results from running the motion planner using 180 angles on the north and northeast peg:
+
+$ python motion_planner.py -w=north -D=180 --stats
+
+2017-03-13 16:45:21,445 - INFO - Running motion_planner.py
+2017-03-13 16:45:21,446 - INFO - Angle discretization: 180
+2017-03-13 16:45:21,446 - INFO - Calculating stats then exit
+2017-03-13 16:45:21,446 - INFO - Loading unreachables from n_unreachables.pickle
+2017-03-13 16:45:25,051 - INFO - Loading pickle file : n_stage4.pickle
+2017-03-13 16:46:17,370 - INFO - Total number of reachable states:       3248540
+2017-03-13 16:46:53,262 - INFO - Num stage1 paths :   110930
+2017-03-13 16:46:53,262 - INFO - Num stage2 paths :  2610365
+2017-03-13 16:46:53,262 - INFO - Num stage3 paths :   476499
+2017-03-13 16:46:53,262 - INFO - Num stage4 paths :    39418
+2017-03-13 16:47:12,456 - INFO - Num stage1 / lh  :   105223
+2017-03-13 16:47:12,456 - INFO - Num stage1 / rh  :     5707
+2017-03-13 16:47:49,498 - INFO - Num stage2 / lh  :   962102
+2017-03-13 16:47:49,498 - INFO - Num stage2 / rh  :  1648263
+2017-03-13 16:48:03,098 - INFO - Num stage3 / lh  :   235671
+2017-03-13 16:48:03,098 - INFO - Num stage3 / rh  :   240828
+2017-03-13 16:48:09,159 - INFO - Num stage4 / fwd :    19727
+2017-03-13 16:48:09,159 - INFO - Num stage4 / rev :    19691
+2017-03-13 16:48:09,988 - INFO - Number of states having a path:         3237212
+2017-03-13 16:48:10,981 - INFO - Number of these that are unreachable:         0    (Should be 0)
+2017-03-13 16:48:13,425 - INFO - Number reachable states lacking path:     11328
+2017-03-13 16:48:13,426 - INFO - Percent reachable states having path:      99.65
+2017-03-13 16:48:13,426 - INFO - Num missing via subtraction  :            11328
+2017-03-13 16:48:13,426 - INFO - Percent having path via subtraction :      99.65
+
+
+
+$ python motion_planner.py -w=northeast -D=180 --stats
+2017-03-13 16:49:27,090 - INFO - Running motion_planner.py
+2017-03-13 16:49:27,091 - INFO - Angle discretization: 180
+2017-03-13 16:49:27,091 - INFO - Calculating stats then exit
+2017-03-13 16:49:27,091 - INFO - Loading unreachables from ne_unreachables.pickle
+2017-03-13 16:49:31,544 - INFO - Loading pickle file : ne_stage4.pickle
+2017-03-13 16:50:36,535 - INFO - Total number of reachable states:       3801496
+2017-03-13 16:51:22,638 - INFO - Num stage1 paths :    60594
+2017-03-13 16:51:22,638 - INFO - Num stage2 paths :  2794201
+2017-03-13 16:51:22,639 - INFO - Num stage3 paths :   882138
+2017-03-13 16:51:22,639 - INFO - Num stage4 paths :    49425
+2017-03-13 16:51:45,178 - INFO - Num stage1 / lh  :    19401
+2017-03-13 16:51:45,178 - INFO - Num stage1 / rh  :    41193
+2017-03-13 16:52:32,242 - INFO - Num stage2 / lh  :  1566431
+2017-03-13 16:52:32,242 - INFO - Num stage2 / rh  :  1227770
+2017-03-13 16:52:52,976 - INFO - Num stage3 / lh  :   397687
+2017-03-13 16:52:52,976 - INFO - Num stage3 / rh  :   484451
+2017-03-13 16:53:00,005 - INFO - Num stage4 / fwd :    24805
+2017-03-13 16:53:00,005 - INFO - Num stage4 / rev :    24620
+2017-03-13 16:53:00,910 - INFO - Number of states having a path:         3786358
+2017-03-13 16:53:02,010 - INFO - Number of these that are unreachable:         0    (Should be 0)
+2017-03-13 16:53:04,800 - INFO - Number reachable states lacking path:     15138
+2017-03-13 16:53:04,800 - INFO - Percent reachable states having path:      99.60
+2017-03-13 16:53:04,801 - INFO - Num missing via subtraction  :            15138
+2017-03-13 16:53:04,801 - INFO - Percent having path via subtraction :      99.60
+
+
+
+
+
+
+
+
+#=======================================================================================
+
+										360 Mar11 Run
+
+#=======================================================================================
+
+
+$ python mp.py -w=north --stats
+2017-03-12 17:01:37,736 - INFO - Running mp.py
+2017-03-12 17:01:37,738 - INFO - Calculating stats then exit
+2017-03-12 17:01:37,738 - INFO - Loading unreachables from n_unreachables.pickle
+2017-03-12 17:01:44,789 - INFO - Loading pickle file from n_stage4.pickle
+2017-03-12 17:03:37,970 - INFO - Total number of reachable states:       6493270
+2017-03-12 17:05:15,093 - INFO - Num stage1 paths :   251328
+2017-03-12 17:05:15,093 - INFO - Num stage2 paths :  5169067
+2017-03-12 17:05:15,094 - INFO - Num stage3 paths :   974410
+2017-03-12 17:05:15,094 - INFO - Num stage4 paths :    76884
+2017-03-12 17:06:06,076 - INFO - Num stage1 / lh  :   239747
+2017-03-12 17:06:06,076 - INFO - Num stage1 / rh  :    11581
+2017-03-12 17:07:43,587 - INFO - Num stage2 / lh  :  1940276
+2017-03-12 17:07:43,587 - INFO - Num stage2 / rh  :  3228791
+2017-03-12 17:08:19,351 - INFO - Num stage3 / lh  :   974410
+2017-03-12 17:08:19,351 - INFO - Num stage3 / rh  :        0
+2017-03-12 17:08:36,104 - INFO - Num stage4 / fwd :    38411
+2017-03-12 17:08:36,104 - INFO - Num stage4 / rev :    38473
+2017-03-12 17:08:39,156 - INFO - Number of states having a path:         6471689
+2017-03-12 17:08:42,723 - INFO - Number of these that are unreachable:         0    (Should be 0)
+2017-03-12 17:08:50,382 - INFO - Number reachable states lacking path:     21581
+2017-03-12 17:08:50,382 - INFO - Percent reachable states having path:      99.67
+2017-03-12 17:08:50,382 - INFO - Num missing via subtraction  :            21581
+2017-03-12 17:08:50,382 - INFO - Percent having path via subtraction :      99.67
+
+
+$ python mp.py -w=northeast --stats
+2017-03-12 17:09:56,361 - INFO - Running mp.py
+2017-03-12 17:09:56,363 - INFO - Calculating stats then exit
+2017-03-12 17:09:56,363 - INFO - Loading unreachables from ne_unreachables.pickle
+2017-03-12 17:10:04,578 - INFO - Loading pickle file from ne_stage4.pickle
+2017-03-12 17:12:14,841 - INFO - Total number of reachable states:       7598446
+2017-03-12 17:14:11,654 - INFO - Num stage1 paths :   108884
+2017-03-12 17:14:11,654 - INFO - Num stage2 paths :  4968527
+2017-03-12 17:14:11,654 - INFO - Num stage3 paths :  2399027
+2017-03-12 17:14:11,654 - INFO - Num stage4 paths :    95968
+2017-03-12 17:15:04,184 - INFO - Num stage1 / lh  :    27380
+2017-03-12 17:15:04,185 - INFO - Num stage1 / rh  :    81504
+2017-03-12 17:16:59,386 - INFO - Num stage2 / lh  :  2810898
+2017-03-12 17:16:59,386 - INFO - Num stage2 / rh  :  2157629
+2017-03-12 17:17:59,827 - INFO - Num stage3 / lh  :  2399027
+2017-03-12 17:17:59,828 - INFO - Num stage3 / rh  :        0
+2017-03-12 17:18:16,912 - INFO - Num stage4 / fwd :    48102
+2017-03-12 17:18:16,913 - INFO - Num stage4 / rev :    47866
+2017-03-12 17:18:20,086 - INFO - Number of states having a path:         7572406
+2017-03-12 17:18:23,852 - INFO - Number of these that are unreachable:         0    (Should be 0)
+2017-03-12 17:18:31,614 - INFO - Number reachable states lacking path:     26040
+2017-03-12 17:18:31,614 - INFO - Percent reachable states having path:      99.66
+2017-03-12 17:18:31,614 - INFO - Num missing via subtraction  :            26040
+2017-03-12 17:18:31,614 - INFO - Percent having path via subtraction :      99.66
+
+
+~/mp$ python mp.py -w=north --sample
+2017-03-12 16:52:45,392 - INFO - Running mp.py
+2017-03-12 16:52:45,394 - INFO - Running sample code block
+2017-03-12 16:52:45,394 - INFO - Loading n_stage4.pickle
+2017-03-12 16:52:45,394 - INFO - Loading pickle file from n_stage4.pickle
+2017-03-12 16:54:23,141 - INFO - Loaded n_stage4.pickle : 6471689 rows  (1.6 min)
+2017-03-12 16:54:23,144 - INFO - Sampling 20000 trajectories 
+2017-03-12 16:54:23,146 - INFO - Calulating trajectories for 6471689 states
+2017-03-12 16:54:25,783 - INFO - Writing 20000 rows to n_sample_traj.pickle
+2017-03-12 16:54:26,104 - INFO - Wrote 20000 trajectories to n_sample_traj.pickle. (0.0 min) 
+2017-03-12 16:54:26,122 - INFO - Loading unreachables from n_unreachables.pickle
+2017-03-12 16:54:33,499 - INFO - Writing 20000 rows to n_sample_unreachables.pickle
+2017-03-12 16:54:41,642 - INFO - Sampling 1000 states and their ancestors.
+2017-03-12 16:54:58,160 - INFO - Writing 323258 rows to n_sample_stage2.pickle
+2017-03-12 16:55:03,911 - INFO - Wrote 323258 states to n_sample_stage2.pickle. (0.5 min) 
+2017-03-12 16:55:14,736 - INFO - Sampling 10000 states and their ancestors.
+2017-03-12 16:55:14,802 - INFO - Writing 17111 rows to n_sample.pickle
+2017-03-12 16:55:15,117 - INFO - Wrote 17111 states to n_sample.pickle. (0.2 min) 
+2017-03-12 16:55:26,042 - INFO - Sampling 500 states and their ancestors.
+2017-03-12 16:55:42,507 - INFO - Writing 285558 rows to n_sample_stage4.pickle
+2017-03-12 16:55:47,629 - INFO - Wrote 285558 states to n_sample_stage4.pickle. (0.5 min) 
+2017-03-12 16:55:47,680 - INFO - Loading n_stage4.pickle
+2017-03-12 16:55:47,683 - INFO - Loading pickle file from n_stage4.pickle
+2017-03-12 16:57:16,179 - INFO - Loaded n_stage4.pickle : 6471689 rows  (1.5 min)
+2017-03-12 16:57:16,181 - INFO - Loading unreachables from n_unreachables.pickle
+2017-03-12 16:57:37,364 - INFO - Total number of reachable states:       6493270
+2017-03-12 16:57:44,433 - INFO - Number reachable states lacking path:     21581
+2017-03-12 16:57:44,433 - INFO - Percent reachable states having path:      99.67
+2017-03-12 16:57:44,433 - INFO - Saving only 20000/21581
+2017-03-12 16:57:46,027 - INFO - Writing 20000 rows to n_remaining.pickle
+2017-03-12 16:57:51,084 - INFO - elapsed 5.1
+2017-03-12 16:57:51,087 - INFO - SAMPLE DONE
+
+
+$ python mp.py -w=northeast --sample
+2017-03-12 17:08:17,777 - INFO - Running mp.py
+2017-03-12 17:08:17,779 - INFO - Running sample code block
+2017-03-12 17:08:17,779 - INFO - Loading ne_stage4.pickle
+2017-03-12 17:08:17,779 - INFO - Loading pickle file from ne_stage4.pickle
+2017-03-12 17:10:00,736 - INFO - Loaded ne_stage4.pickle : 7572406 rows  (1.7 min)
+2017-03-12 17:10:00,737 - INFO - Sampling 20000 trajectories 
+2017-03-12 17:10:00,739 - INFO - Calulating trajectories for 7572406 states
+2017-03-12 17:10:03,634 - INFO - Writing 20000 rows to ne_sample_traj.pickle
+2017-03-12 17:10:04,033 - INFO - Wrote 20000 trajectories to ne_sample_traj.pickle. (0.1 min) 
+2017-03-12 17:10:04,056 - INFO - Loading unreachables from ne_unreachables.pickle
+2017-03-12 17:10:12,701 - INFO - Writing 20000 rows to ne_sample_unreachables.pickle
+2017-03-12 17:10:26,229 - INFO - Sampling 1000 states and their ancestors.
+2017-03-12 17:10:45,684 - INFO - Writing 232558 rows to ne_sample_stage2.pickle
+2017-03-12 17:10:49,552 - INFO - Wrote 232558 states to ne_sample_stage2.pickle. (0.6 min) 
+2017-03-12 17:11:01,725 - INFO - Sampling 10000 states and their ancestors.
+2017-03-12 17:11:01,792 - INFO - Writing 15919 rows to ne_sample.pickle
+2017-03-12 17:11:02,095 - INFO - Wrote 15919 states to ne_sample.pickle. (0.2 min) 
+2017-03-12 17:11:14,549 - INFO - Sampling 500 states and their ancestors.
+2017-03-12 17:11:34,014 - INFO - Writing 176193 rows to ne_sample_stage4.pickle
+2017-03-12 17:11:37,085 - INFO - Wrote 176193 states to ne_sample_stage4.pickle. (0.6 min) 
+2017-03-12 17:11:37,123 - INFO - Loading ne_stage4.pickle
+2017-03-12 17:11:37,127 - INFO - Loading pickle file from ne_stage4.pickle
+2017-03-12 17:13:10,420 - INFO - Loaded ne_stage4.pickle : 7572406 rows  (1.6 min)
+2017-03-12 17:13:10,422 - INFO - Loading unreachables from ne_unreachables.pickle
+2017-03-12 17:13:37,384 - INFO - Total number of reachable states:       7598446
+2017-03-12 17:13:45,165 - INFO - Number reachable states lacking path:     26040
+2017-03-12 17:13:45,165 - INFO - Percent reachable states having path:      99.66
+2017-03-12 17:13:45,165 - INFO - Saving only 20000/26040
+2017-03-12 17:13:47,028 - INFO - Writing 20000 rows to ne_remaining.pickle
+2017-03-12 17:13:53,275 - INFO - elapsed 5.6
+2017-03-12 17:13:53,278 - INFO - SAMPLE DONE
+
+
+
+#=======================================================================================
+
+										Analyses
+
+#=======================================================================================
+
+The following analyses were run using the --dev argument. 
+This option is handy for running custom code. See the ipython notebook for more examples.  
+
+
+Running dev code block
+Loading stage4.pickle
+Loading config file from stage4.pickle
+Loaded stage4.pickle : 2533607 rows  (3.4 min)
+2017-02-20 12:36:34,348 - INFO - Calulating trajectories for 2533607 states
+Calculated 30 trajectories. (3.4)
+===================================================================================
+state : next(planned) next(simulated)  target (goal)            move          dist
+===================================================================================
+(153, 32, 98)  :
+	  (59, 18, 98)   (58, 18, 98)    (1, 0, 350)              |        -95.036
+	 (56, 48, 273)  (53, 47, 278)    (1, 0, 350)             lh         47.123
+	   (1, 0, 350)   (2, -5, 354)    (1, 0, 350)             lh         78.707
+(145, 56, 85)  :
+	  (88, 60, 85)   (88, 60, 85)    (1, 0, 350)              |         -57.14
+	 (88, 60, 260)  (88, 60, 260)    (1, 0, 350)             qt           0.25
+	   (1, 0, 350)    (1, 0, 350)    (1, 0, 350)             lh        117.269
+(94, 69, 213)  :
+	 (97, 63, 213)  (97, 63, 213)    (0, 0, 350)              |         -6.708
+	 (97, 63, 257)  (97, 63, 257)    (0, 0, 350)             qt           0.25
+	   (0, 0, 350)    (0, 0, 349)    (0, 0, 350)             lh        128.303
+(151, 33, 96)  :
+	  (65, 24, 96)   (65, 23, 96)    (0, 0, 350)              |        -86.469
+	 (63, 54, 272)  (61, 52, 276)    (0, 0, 350)             lh         47.123
+	   (0, 0, 350)   (2, -6, 354)    (0, 0, 350)             lh         88.883
+(151, 53, 128)  :
+	 (80, -1, 128)  (80, -1, 128)    (0, 0, 353)              |        -89.202
+	 (84, 18, 212)  (83, 18, 209)    (0, 0, 353)             lh         21.117
+	   (0, 0, 353)   (-1, 6, 347)    (0, 0, 353)             lh        109.515
+(12, 12, 332)  :
+	 (19, 26, 332)  (19, 25, 332)      (0, 0, 0)              |        -15.652
+	 (19, 26, 262)  (19, 25, 262)      (0, 0, 0)             qt           0.25
+	  (3, 17, 338)   (3, 15, 337)      (0, 0, 0)             lh         19.754
+	     (0, 0, 0)     (0, -1, 2)      (0, 0, 0)             lh         17.254
+(150, 28, 103)  :
+	  (65, 8, 103)   (64, 8, 103)    (1, 0, 353)              |        -87.321
+	 (68, 36, 245)  (67, 35, 243)    (1, 0, 353)             lh         36.563
+	   (1, 0, 353)   (-1, 1, 349)    (1, 0, 353)             lh         88.191
+(145, 65, 138)  :
+	 (84, -1, 138)  (84, -1, 138)    (0, 0, 355)              |        -89.872
+	 (87, 15, 205)  (86, 15, 204)    (0, 0, 355)             lh         17.206
+	   (0, 0, 355)    (0, 3, 351)    (0, 0, 355)             lh        116.897
+(145, 65, 152)  :
+	 (111, 2, 152)  (111, 1, 152)    (0, 0, 350)              |        -71.589
+	(111, 16, 207) (111, 14, 208)    (0, 0, 350)             lh         14.565
+	   (0, 0, 350)   (1, -2, 349)    (0, 0, 350)             lh        144.972
+(52, 75, 173)  :
+	 (42, -1, 173)  (42, -1, 173)    (0, 0, 350)              |        -76.655
+	 (39, 11, 223)  (38, 10, 222)    (0, 0, 350)             lh         12.749
+	   (0, 0, 350)    (0, 0, 345)    (0, 0, 350)             lh         48.329
+(150, 19, 78)  :
+	  (14, 47, 78)   (14, 47, 78)    (1, 0, 350)              |       -138.852
+	 (14, 47, 306)  (14, 47, 306)    (1, 0, 350)             qt           0.25
+	  (8, 38, 348)   (8, 37, 348)    (1, 0, 350)             lh         11.065
+	   (1, 0, 350)    (0, 0, 350)    (1, 0, 350)             lh          38.64
+(150, 19, 92)  :
+	  (69, 16, 92)   (68, 16, 92)    (0, 0, 350)              |        -81.055
+	 (72, 46, 256)  (66, 45, 272)    (0, 0, 350)             lh         47.123
+	   (0, 0, 350)   (10, -18, 6)    (0, 0, 350)             lh         94.806
+(112, 73, 199)  :
+	(115, 62, 199) (115, 62, 199)    (1, 0, 350)              |        -11.401
+	(115, 62, 270) (115, 62, 270)    (1, 0, 350)             qt           0.25
+	(110, 63, 251) (109, 62, 250)    (1, 0, 350)             rh          5.123
+	   (1, 0, 350)    (0, 0, 349)    (1, 0, 350)             lh        142.905
+(20, 18, 37)  :
+	  (13, 25, 37)   (14, 25, 37)    (1, 0, 350)              |         -9.899
+	 (13, 25, 338)  (14, 25, 338)    (1, 0, 350)             qt           0.25
+	 (11, 21, 321)  (11, 21, 321)    (1, 0, 350)             rh          4.488
+	   (1, 0, 350)    (1, 0, 350)    (1, 0, 350)             lh         23.503
+(57, 65, 141)  :
+	 (30, 32, 141)  (30, 31, 141)    (1, 0, 350)              |        -42.638
+	 (30, 32, 328)  (30, 31, 328)    (1, 0, 350)             qt           0.25
+	 (23, 26, 292)  (22, 25, 292)    (1, 0, 350)             rh          9.371
+	   (1, 0, 350)   (0, -1, 349)    (1, 0, 350)             lh         35.522
+(115, 72, 203)  :
+	(118, 62, 203) (119, 62, 203)    (1, 0, 350)              |         -10.44
+	(118, 62, 265) (119, 62, 265)    (1, 0, 350)             qt           0.25
+	(114, 63, 249) (114, 62, 249)    (1, 0, 350)             rh          4.136
+	   (1, 0, 350)   (1, -1, 350)    (1, 0, 350)             lh        147.669
+(54, 63, 133)  :
+	 (23, 34, 133)  (22, 34, 133)    (1, 0, 350)              |        -42.449
+	 (23, 34, 325)  (22, 34, 325)    (1, 0, 350)             qt           0.25
+	 (20, 31, 309)  (19, 30, 309)    (1, 0, 350)             rh          4.256
+	   (1, 0, 350)   (0, -1, 350)    (1, 0, 350)             lh         37.128
+(150, 22, 51)  :
+	 (119, 46, 51)  (119, 46, 51)    (1, 0, 350)              |        -39.204
+	(119, 46, 308) (119, 46, 308)    (1, 0, 350)             qt           0.25
+	(102, 45, 239) (102, 44, 239)    (1, 0, 350)             rh         18.109
+	   (1, 0, 350)    (0, 0, 349)    (1, 0, 350)             lh        129.565
+(54, 63, 171)  :
+	 (43, -1, 171)  (43, -1, 171)    (0, 0, 350)              |        -64.938
+	 (39, 12, 225)  (38, 11, 225)    (0, 0, 350)             lh         14.116
+	   (0, 0, 350)   (-1, 0, 345)    (0, 0, 350)             lh         49.421
+(94, 67, 157)  :
+	  (65, 0, 157)   (65, 0, 157)    (0, 0, 350)              |        -73.006
+	 (63, 15, 218)  (63, 15, 218)    (0, 0, 350)             lh         15.861
+	   (0, 0, 350)    (0, 1, 346)    (0, 0, 350)             lh         79.249
+(136, 47, 90)  :
+	   (3, 47, 90)    (3, 47, 90)    (1, 0, 353)              |         -133.0
+	   (3, 47, 37)    (3, 47, 37)    (1, 0, 353)             qt           0.25
+	  (6, 36, 352)   (5, 35, 352)    (1, 0, 353)             rh         11.695
+	   (1, 0, 353)   (0, -1, 353)    (1, 0, 353)             lh         36.346
+
+
+Loading stage4.pickle
+Loading config file from stage4.pickle
+Loaded stage4.pickle : 2533607 rows  (3.4 min)
+2017-02-20 12:51:27,317 - INFO - Calulating trajectories for 2533607 states
+Calculated 50000 trajectories. (3.5 min)
+Average distance error   : 0.6
+Average heading error    : 1.6
+
+
+Running dev code block
+Estimating trajectory error over all paths
+Loading stage4.pickle
+Loading config file from stage4.pickle
+Loaded stage4.pickle : 2533607 rows  (3.4 min)
+2017-02-20 12:56:41,070 - INFO - Calulating trajectories for 2533607 states
+2017-02-20 12:56:49,275 - INFO - Processed 200000   (0.1 min)
+2017-02-20 12:56:56,166 - INFO - Processed 400000   (0.3 min)
+2017-02-20 12:57:02,689 - INFO - Processed 600000   (0.4 min)
+2017-02-20 12:57:09,358 - INFO - Processed 800000   (0.5 min)
+2017-02-20 12:57:15,638 - INFO - Processed 1000000   (0.6 min)
+Calculated 1000000 trajectories. (4.0 min)
+Average distance error   : 4.2
+Average heading error    : 3.7
+
