@@ -31,16 +31,18 @@ if __name__ == '__main__':
     logging.info("")
     logging.info("Sample of first 5 rows: ")
     ii=0
+    iter=config.iteritems()
     while ii < 5:
-        k,v = next(config.iteritems())
+        k,v = next(iter)
         logging.info("%s: %s", k, v)
         ii+=1
 
     ii=0
     logging.info("")
     logging.info("Again, using pretty printer: ")
+    iter=config.iteritems()
     while ii < 5:
-        k,v = next(config.iteritems())
+        k,v = next(iter)
         logging.info("%s:", mp.str_state(k, v))
         ii+=1
 
