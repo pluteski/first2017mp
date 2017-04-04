@@ -101,3 +101,6 @@ The --stats argument displays statistics then exits.
 $ motion_planner.py --stats -w=northeast
 
 There are additional methods for evaluating trajectories.
+
+# Contact
+![Email contact](https://github.com/pluteski/first2017mp/blob/master/images/pluteski_email.png)
